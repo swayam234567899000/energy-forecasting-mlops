@@ -1,40 +1,26 @@
-STATUS.md
+@"
 
-# python
+# Energy forecasting datasets
+data/raw/
+data/processed/
+
+# Python generated files
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.pyw
-*.pyz
-
-venv/
 .venv/
+venv/
 
-# Tooling caches
-.ruff_cache/
-.mypy_cache/
-.pytest_cache/
-.coverage
-htmlcov/
-
-# mlops/
-# data/processed/
-# data/raw/
-
-# DVC-managed model/data artifacts
-models/*.pkl
-data/**/*.csv
-data/**/*.txt
-
-data/raw/household_power_consumption.txt
+# Model and experiment artifacts
 mlruns/
+models/
+*.pkl
+*.joblib
 
-# OS
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Local files
 .DS_Store
-
-# Editor / local tooling
-.vscode/
-
-# Harness worktrees (created inside the project by start-task.sh)
-.worktrees/
+"@ | Add-Content .gitignore
